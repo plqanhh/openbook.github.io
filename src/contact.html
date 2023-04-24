@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/src/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link rel="icon" type="image/x-icon" href="/img/logo.png" />
+  </head>
+  <body>
+    <section id="header">
+      <a href="#"><img src="/img/logo.png" alt="logo" class="logo" /></a>
+      <div>
+        <ul id="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="product.html">Products</a>
+            <ul class="dropdown-menu">
+              <li><a class="active" href="#">Fiction</a></li>
+              <li><a href="#"> Non-Fiction</a></li>
+              <li><a href="#">Children's Books</a></li>
+              <li><a href="#"> Reference Books</a></li>
+              <li><a href="#"> Textbooks</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="cart.html"
+              ><i class="fa-solid fa-cart-shopping" style="color: #84a98c"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contactUs">
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.0716553790894!2d106.69319177605998!3d10.728956760065461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fbea5fe3db1%3A0xfae94aca5709003f!2zxJDhuqFpIEjhu41jIFJNSVQgTmFtIFPDoGkgR8Oybg!5e0!3m2!1svi!2s!4v1682325017351!5m2!1svi!2s"
+          width="100%"
+          height="auto"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div class="form">
+        <table>
+          <tr>
+            <th class="form">
+              <div class="input-data">
+                <h2>Contact Us</h2>
+                <p>
+                  Please fill up the form below to send us a message.We will
+                  contact you soon!
+                </p>
+                <form>
+                  <label for="purpose-select">Contact Purpose</label>
+                  <select name="purpose" id="purpose-select">
+                    <option value="">--Please choose an option--</option>
+                    <option value="sell books">I want to sell books</option>
+                    <option value="buy books">I want to buy books</option>
+                    <option value="others">Others</option>
+                  </select>
+                  <br />
+                  <input
+                    type="text"
+                    id="name"
+                    name="fname"
+                    placeholder="Name"
+                    class="contact-form-txt"
+                  />
+                  <br />
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Email"
+                    class="contact-form-txt"
+                  />
+                  <br />
+                  <input
+                    type="text"
+                    id="address"
+                    name="address"
+                    placeholder="Address"
+                    class="contact-form-txt"
+                  />
+                  <br />
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Phone/Mobile"
+                    pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                    class="contact-form-txt"
+                  />
+                  <br />
+                </form>
+              </div>
+              <div class="checkbox1">
+                <label for="contact-pref" id="contact-pref"
+                  >Contact Preference:</label
+                >
+                <input
+                  type="checkbox"
+                  id="via-mail"
+                  name="via-mail"
+                  value="via-mail"
+                />
+                <label for="via-mail"> By Email</label>
+                <input
+                  type="checkbox"
+                  id="via-phone"
+                  name="via-phone"
+                  value="via-phone"
+                />
+                <label for="via-phone"> By Phone</label><br />
+                <label for="newsletter" id="newsletter"
+                  >Receive weekly Newsletter</label
+                >
+                <br />
+                <input
+                  type="radio"
+                  id="newsletter"
+                  name="newsletter"
+                  value="yes"
+                />
+                <label for="yes">Yes</label>
+                <input
+                  type="radio"
+                  id="newsletter"
+                  name="newsletter"
+                  value="no"
+                />
+                <label for="yes">No</label>
+                <br />
+                <textarea
+                  placeholder="Any notes"
+                  class="contact-form-txtarea"
+                ></textarea>
+                <input type="submit" name="Submit" class="contact-form-btn" />
+              </div>
+            </th>
+            <th></th>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <section id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col" id="company">
+            <img src="/img/logo.png" alt="logo" class="logo2" />
+            <p>
+              We are specialized in designings, make your business a brand. Try
+              our premium services.
+            </p>
+            <div class="social">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col" id="services">
+            <h3>Services</h3>
+            <div class="links">
+              <a href="product.html">Book</a>
+              <a href="#friction">Friction</a>
+              <a href="#nonfriction">Nonfriction</a>
+              <a href="#">Kids</a>
+            </div>
+          </div>
+          <div class="col" id="services">
+            <h3>Quick Help</h3>
+            <div class="links">
+              <a href="contact.html">Help Center</a>
+              <a href="contact.html">Shipping & Returns</a>
+              <a href="contact.html">Order Status</a>
+              <a href="#">Gift Card</a>
+            </div>
+          </div>
+
+          <div class="col" id="useful-links">
+            <h3>Links</h3>
+            <div class="links">
+              <a href="index.html">About</a>
+              <a href="contact.html">Services</a>
+              <a href="#">Our Policy</a>
+              <a href="contact.html">Help</a>
+            </div>
+          </div>
+
+          <div class="col" id="contact">
+            <h3>Contact</h3>
+            <div class="contact-details">
+              <i class="fa fa-location"></i>
+              <p>
+                702 Nguyen Van Linh <br />
+                District 7, HCMC
+              </p>
+            </div>
+            <div class="contact-details">
+              <i class="fa fa-phone"></i>
+              <p>+84 907479788</p>
+            </div>
+            <div class="contact-details">
+              <i class="fa-solid fa-envelope" style="color: #000000"></i>
+              <p>openbook@gmail.com</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="form">
+            <form action="">
+              <input type="text" placeholder="Email here..." />
+              <button><i class="fa fa-paper-plane"></i></button>
+            </form>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">OpenBook © 2023 - All Rights Reserved</p>
+      </div>
+    </section>
+
+
+    <script
+      src="https://kit.fontawesome.com/625c7efa43.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
